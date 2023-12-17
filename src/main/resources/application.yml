@@ -1,0 +1,12 @@
+micronaut:
+  application:
+    name: MicronautDemo
+  server:
+    port: 8090
+
+hello:
+  world:
+    message: "Hello from config"
+    translation:
+      de: "Hello Walt"
+      en: "Hello World"
