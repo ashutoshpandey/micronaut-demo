@@ -14,12 +14,12 @@ public class InMemoryStore {
 
     @PostConstruct
     public void initialize(){
-        IntStream.range(0, 10).forEach(i -> addNewSymbol(i));
+        IntStream.range(1, 11).forEach(i -> addNewSymbol(i));
     }
 
     private void addNewSymbol(Integer i){
         Symbol symbol = new Symbol(i.toString());
-        symbols.put(symbol.getValue(), symbol);
+        symbols.put(symbol.value(), symbol);
     }
 
     public Map<String, Symbol> getSymbols(){
